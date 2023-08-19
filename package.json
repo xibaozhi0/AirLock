@@ -1,0 +1,28 @@
+{
+  "name": "airlock",
+  "version": "1.0.0",
+  "description": "Welcome to the companion app of Odyssey's Voyage II: Federating the Monolith! This is the `server` backend of the Airlock app. You can [find the course lessons and instructions on Odyssey](http://apollographql.com/tutorials/voyage-part2), Apollo's learning platform.",
+  "main": "index.js",
+  "dependencies": {
+    "@apollo/datasource-rest": "^6.0.1",
+    "@apollo/server": "^4.9.1",
+    "@apollo/subgraph": "^2.4.12",
+    "axios": "^1.4.0",
+    "date-fns": "^2.30.0",
+    "graphql": "^16.8.0",
+    "graphql-tag": "^2.12.6",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js",
+    "launch": "node utils/launch.js",
+    "postinstall": "npm run install-services",
+    "install-services": "node utils/install.js",
+    "db:reset": "node utils/reset.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

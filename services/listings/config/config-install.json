@@ -1,0 +1,9 @@
+{
+    "development": {
+      "username": "root",
+      "password": "princess",
+      "database": "sequelize_development",
+      "dialect": "mysql",
+      "storage": "./services/listings/listings.db"
+    }
+  }
